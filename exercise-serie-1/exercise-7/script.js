@@ -3,10 +3,10 @@ console.log("This script is linked properly!")
 
 
 //Write your JS code here...
-function bigImg(x) {
-  x.style.opacity = "0";
-}
-
-function normalImg(x) {
-  x.style.opacity = "1";
+function changePos() {
+    var float = document.getElementById("knopje");
+    var x = Math.floor(Math.random() * 600);
+    var y = Math.floor(Math.random() * 600);
+    float.style.top = y + 'px';
+    float.style.left = x + 'px';
 }
